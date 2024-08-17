@@ -1,0 +1,10 @@
+version: '3'
+services:
+  node-app:
+    container_name: docker-tut
+    ports:
+      - 5000:5000
+    env_file:
+      - ./.env
+    expose:
+      - 5000

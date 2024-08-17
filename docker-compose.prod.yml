@@ -1,0 +1,9 @@
+services:
+  node-app:
+    build:
+      context: .
+      target: prod-runner
+      args:
+        - NODE_ENV=production
+    environment:
+      - NODE_ENV=production
